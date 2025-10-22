@@ -1,0 +1,20 @@
+2025-10-15 18:54:58,294 - Log file for this run: C:\Users\plenngaul\Documents\COE187\cats_dogs_training\results\catsdogs_5ep___2025.10.15-185458\catsdogs_5ep___2025.10.15-185458.log
+2025-10-15 18:54:58,295 - Configuring device: MAX78000, simulate=False.
+2025-10-15 18:54:58,460 - 
+2025-10-15 18:54:58,460 - --------------------------------------------------------
+2025-10-15 18:54:58,462 - Logging to TensorBoard - remember to execute the server:
+2025-10-15 18:54:58,462 - > tensorboard --logdir='./logs'
+2025-10-15 18:54:58,462 - 
+2025-10-15 18:54:59,074 - Optimizer Type: <class 'torch.optim.adam.Adam'>
+2025-10-15 18:54:59,075 - Optimizer Args: {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0.0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None}
+2025-10-15 18:55:03,097 - Reading compression schedule from: policies/schedule-catsdogs.yaml
+2025-10-15 18:55:03,374 - torch.compile() successful, mode=default, cache limit=8
+2025-10-15 18:55:03,374 - Dataset sizes:
+	training=22499
+	validation=2499
+	test=24998
+2025-10-15 18:55:03,375 - 
+
+2025-10-15 18:55:03,375 - Training epoch: 22499 samples (64 per mini-batch, world size: 1)
+2025-10-15 18:55:23,059 - 
+2025-10-15 18:55:23,059 - Log file for this run: C:\Users\plenngaul\Documents\COE187\cats_dogs_training\results\catsdogs_5ep___2025.10.15-185458\catsdogs_5ep___2025.10.15-185458.log
