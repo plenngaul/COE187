@@ -1,0 +1,51 @@
+2025-11-07 16:12:29,179 - Log file for this run: C:\Users\plenngaul\ai8x-training\logs\weather4_eval_full___2025.11.07-161229\weather4_eval_full___2025.11.07-161229.log
+2025-11-07 16:12:29,179 - Configuring device: MAX78000, simulate=False.
+2025-11-07 16:12:29,263 - 
+2025-11-07 16:12:29,263 - --------------------------------------------------------
+2025-11-07 16:12:29,263 - Logging to TensorBoard - remember to execute the server:
+2025-11-07 16:12:29,263 - > tensorboard --logdir='./logs'
+2025-11-07 16:12:29,263 - 
+2025-11-07 16:12:29,644 - => loading checkpoint C:\Users\plenngaul\ai8x-training\logs\weather4_ai85net5_32px_e40_b64_tb___2025.11.07-150916\weather4_ai85net5_32px_e40_b64_tb_best.pth.tar
+2025-11-07 16:12:29,656 - => Checkpoint contents:
++----------------------+-------------+----------+
+| Key                  | Type        | Value    |
+|----------------------+-------------+----------|
+| arch                 | str         | ai85net5 |
+| compression_sched    | dict        |          |
+| epoch                | int         | 26       |
+| extras               | dict        |          |
+| optimizer_state_dict | dict        |          |
+| optimizer_type       | type        | SGD      |
+| state_dict           | OrderedDict |          |
++----------------------+-------------+----------+
+
+2025-11-07 16:12:29,657 - => Checkpoint['extras'] contents:
++--------------+--------+---------+
+| Key          | Type   |   Value |
+|--------------+--------+---------|
+| best_epoch   | int    | 26      |
+| best_mAP     | int    |  0      |
+| best_top1    | float  | 87.6404 |
+| current_mAP  | int    |  0      |
+| current_top1 | float  | 87.6404 |
++--------------+--------+---------+
+
+2025-11-07 16:12:29,657 - Loaded compression schedule from checkpoint (epoch 26)
+2025-11-07 16:12:29,664 - Optimizer of type <class 'torch.optim.sgd.SGD'> was loaded from checkpoint
+2025-11-07 16:12:29,665 - Optimizer Args: {'lr': 0.01, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0005, 'nesterov': False, 'maximize': False, 'foreach': None, 'differentiable': False, 'fused': None}
+2025-11-07 16:12:29,665 - => loaded checkpoint 'C:\Users\plenngaul\ai8x-training\logs\weather4_ai85net5_32px_e40_b64_tb___2025.11.07-150916\weather4_ai85net5_32px_e40_b64_tb_best.pth.tar' (epoch 26)
+2025-11-07 16:12:29,724 - Dataset sizes:
+	test=226
+2025-11-07 16:12:29,724 - --- test (ckpt) ---------------------
+2025-11-07 16:12:29,725 - 226 samples (256 per mini-batch)
+2025-11-07 16:12:52,739 - Test: [    1/    1]    Loss 0.307629    Top1 91.592920    
+2025-11-07 16:12:53,697 - ==> Top1: 91.593    Loss: 0.308
+
+2025-11-07 16:12:53,697 - ==> Confusion:
+[[51  5  4  0]
+ [ 1 41  1  0]
+ [ 5  1 44  1]
+ [ 1  0  0 71]]
+
+2025-11-07 16:12:53,698 - 
+2025-11-07 16:12:53,698 - Log file for this run: C:\Users\plenngaul\ai8x-training\logs\weather4_eval_full___2025.11.07-161229\weather4_eval_full___2025.11.07-161229.log

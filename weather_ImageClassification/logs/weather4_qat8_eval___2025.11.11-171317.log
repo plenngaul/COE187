@@ -1,0 +1,46 @@
+2025-11-11 17:13:17,523 - Log file for this run: C:\Users\plenngaul\ai8x-training\logs\weather4_qat8_eval___2025.11.11-171317\weather4_qat8_eval___2025.11.11-171317.log
+2025-11-11 17:13:17,524 - Configuring device: MAX78000, simulate=False.
+2025-11-11 17:13:17,749 - 
+2025-11-11 17:13:17,749 - --------------------------------------------------------
+2025-11-11 17:13:17,749 - Logging to TensorBoard - remember to execute the server:
+2025-11-11 17:13:17,749 - > tensorboard --logdir='./logs'
+2025-11-11 17:13:17,750 - 
+2025-11-11 17:13:18,318 - => loading checkpoint C:/Users/plenngaul/ai8x-training/logs/weather4_ai85net5_32px_e40_b64_tb___2025.11.07-150916/weather4_ai85net5_32px_e40_b64_tb_qat8-q.pth.tar
+2025-11-11 17:13:18,323 - => Checkpoint contents:
++----------------------+-------------+----------+
+| Key                  | Type        | Value    |
+|----------------------+-------------+----------|
+| arch                 | str         | ai85net5 |
+| compression_sched    | dict        |          |
+| epoch                | int         | 26       |
+| extras               | dict        |          |
+| optimizer_state_dict | dict        |          |
+| optimizer_type       | type        | SGD      |
+| state_dict           | OrderedDict |          |
++----------------------+-------------+----------+
+
+2025-11-11 17:13:18,324 - => Checkpoint['extras'] contents:
++-----------------+--------+-------------------+
+| Key             | Type   | Value             |
+|-----------------+--------+-------------------|
+| best_epoch      | int    | 26                |
+| best_mAP        | int    | 0                 |
+| best_top1       | float  | 87.64044943820225 |
+| clipping_method | str    | MAX_BIT_SHIFT     |
+| current_mAP     | int    | 0                 |
+| current_top1    | float  | 87.64044943820225 |
++-----------------+--------+-------------------+
+
+2025-11-11 17:13:18,324 - Loaded compression schedule from checkpoint (epoch 26)
+2025-11-11 17:13:18,333 - Optimizer of type <class 'torch.optim.sgd.SGD'> was loaded from checkpoint
+2025-11-11 17:13:18,333 - Optimizer Args: {'lr': 0.01, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0005, 'nesterov': False, 'maximize': False, 'foreach': None, 'differentiable': False, 'fused': None}
+2025-11-11 17:13:18,334 - => loaded checkpoint 'C:/Users/plenngaul/ai8x-training/logs/weather4_ai85net5_32px_e40_b64_tb___2025.11.07-150916/weather4_ai85net5_32px_e40_b64_tb_qat8-q.pth.tar' (epoch 26)
+2025-11-11 17:13:18,481 - Dataset sizes:
+	test=226
+2025-11-11 17:13:18,482 - --- test (ckpt) ---------------------
+2025-11-11 17:13:18,482 - 226 samples (256 per mini-batch)
+2025-11-11 17:13:43,763 - Test: [    1/    1]    Loss 3544.932861    Top1 68.584071    
+2025-11-11 17:13:44,747 - ==> Top1: 68.584    Loss: 3544.933
+
+2025-11-11 17:13:44,747 - 
+2025-11-11 17:13:44,748 - Log file for this run: C:\Users\plenngaul\ai8x-training\logs\weather4_qat8_eval___2025.11.11-171317\weather4_qat8_eval___2025.11.11-171317.log
